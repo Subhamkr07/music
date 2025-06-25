@@ -1,75 +1,75 @@
 // Music data
 const musicTracks = [
     // Hindi Music
-    { id: '1', title: 'Aaj Ki Raat', artist: 'Shubham', album: 'Hindi Hits', duration: '3:45', path: 'Music/Hindi/Aaj Ki Raat.mp3', category: 'Hindi', coverArt: 'https://images.pexels.com/photos/167636/pexels-photo-167636.jpeg?auto=compress&cs=tinysrgb&w=300' },
-    { id: '2', title: 'Aaj Phir', artist: 'Shubham', album: 'Hindi Hits', duration: '4:12', path: 'Music/Hindi/Aaj Phir.mp3', category: 'Hindi', coverArt: 'thumbnails/5000000.jpg'},
-    { id: '3', title: 'Aayi Nai', artist: 'Shubham', album: 'Hindi Hits', duration: '3:28', path: 'Music/Hindi/Aayi Nai.mp3', category: 'Hindi', coverArt: 'https://images.pexels.com/photos/167636/pexels-photo-167636.jpeg?auto=compress&cs=tinysrgb&w=300' },
-    { id: '4', title: 'Apna Bana Le', artist: 'Shubham', album: 'Hindi Hits', duration: '4:01', path: 'Music/Hindi/Apna_Bana_Le.mp3', category: 'Hindi', coverArt: 'https://images.pexels.com/photos/167636/pexels-photo-167636.jpeg?auto=compress&cs=tinysrgb&w=300' },
-    { id: '5', title: 'Baarish Ban Jaana', artist: 'Shubham', album: 'Hindi Hits', duration: '3:55', path: 'Music/Hindi/Baarish Ban Jaana.mp3', category: 'Hindi', coverArt: 'https://images.pexels.com/photos/167636/pexels-photo-167636.jpeg?auto=compress&cs=tinysrgb&w=300' },
-    { id: '6', title: 'Baby Girl', artist: 'Shubham', album: 'Hindi Hits', duration: '3:33', path: 'Music/Hindi/Baby Girl.mp3', category: 'Hindi', coverArt: 'https://images.pexels.com/photos/167636/pexels-photo-167636.jpeg?auto=compress&cs=tinysrgb&w=300' },
-    { id: '7', title: 'Bachpan Ka Pyaar', artist: 'Shubham', album: 'Hindi Hits', duration: '2:58', path: 'Music/Hindi/Bachpan Ka Pyaar.mp3', category: 'Hindi', coverArt: 'https://images.pexels.com/photos/167636/pexels-photo-167636.jpeg?auto=compress&cs=tinysrgb&w=300' },
-    { id: '8', title: 'Buzz', artist: 'Shubham', album: 'Hindi Hits', duration: '3:22', path: 'Music/Hindi/Buzz.mp3', category: 'Hindi', coverArt: 'https://images.pexels.com/photos/167636/pexels-photo-167636.jpeg?auto=compress&cs=tinysrgb&w=300' },
-    { id: '9', title: 'De Taali', artist: 'Shubham', album: 'Hindi Hits', duration: '4:15', path: 'Music/Hindi/De Taali.mp3', category: 'Hindi', coverArt: 'https://images.pexels.com/photos/167636/pexels-photo-167636.jpeg?auto=compress&cs=tinysrgb&w=300' },
-    { id: '10', title: 'Dekhte Dekhte', artist: 'Shubham', album: 'Hindi Hits', duration: '4:28', path: 'Music/Hindi/Dekhte Dekhte.mp3', category: 'Hindi', coverArt: 'https://images.pexels.com/photos/167636/pexels-photo-167636.jpeg?auto=compress&cs=tinysrgb&w=300' },
-    { id: '11', title: 'Dheere Dheer', artist: 'Shubham', album: 'Hindi Hits', duration: '3:47', path: 'Music/Hindi/Dheere Dheer.mp3', category: 'Hindi', coverArt: 'https://images.pexels.com/photos/167636/pexels-photo-167636.jpeg?auto=compress&cs=tinysrgb&w=300' },
-    { id: '12', title: 'Dil Mein Chhupa Loonga', artist: 'Shubham', album: 'Hindi Hits', duration: '3:52', path: 'Music/Hindi/Dil Mein Chhupa Loonga.mp3', category: 'Hindi', coverArt: 'https://images.pexels.com/photos/167636/pexels-photo-167636.jpeg?auto=compress&cs=tinysrgb&w=300' },
-    { id: '13', title: 'Dosti', artist: 'Shubham', album: 'Hindi Hits', duration: '4:05', path: 'Music/Hindi/Dosti.mp3', category: 'Hindi', coverArt: 'https://images.pexels.com/photos/167636/pexels-photo-167636.jpeg?auto=compress&cs=tinysrgb&w=300' },
-    { id: '14', title: 'Duniyaa', artist: 'Shubham', album: 'Hindi Hits', duration: '3:41', path: 'Music/Hindi/Duniyaa.mp3', category: 'Hindi', coverArt: 'https://images.pexels.com/photos/167636/pexels-photo-167636.jpeg?auto=compress&cs=tinysrgb&w=300' },
-    { id: '15', title: 'Garmi', artist: 'Shubham', album: 'Hindi Hits', duration: '3:18', path: 'Music/Hindi/Garmi.mp3', category: 'Hindi', coverArt: 'https://images.pexels.com/photos/167636/pexels-photo-167636.jpeg?auto=compress&cs=tinysrgb&w=300' },
-    { id: '16', title: 'Genda Phool', artist: 'Shubham', album: 'Hindi Hits', duration: '2:48', path: 'Music/Hindi/Genda Phool.mp3', category: 'Hindi', coverArt: 'https://images.pexels.com/photos/167636/pexels-photo-167636.jpeg?auto=compress&cs=tinysrgb&w=300' },
-    { id: '17', title: 'Heeriye', artist: 'Shubham', album: 'Hindi Hits', duration: '4:33', path: 'Music/Hindi/Heeriye.mp3', category: 'Hindi', coverArt: 'https://images.pexels.com/photos/167636/pexels-photo-167636.jpeg?auto=compress&cs=tinysrgb&w=300' },
-    { id: '18', title: 'Hua Main', artist: 'Shubham', album: 'Hindi Hits', duration: '3:26', path: 'Music/Hindi/Hua Main.mp3', category: 'Hindi', coverArt: 'https://images.pexels.com/photos/167636/pexels-photo-167636.jpeg?auto=compress&cs=tinysrgb&w=300' },
-    { id: '19', title: 'Jaana Samjho Na', artist: 'Shubham', album: 'Hindi Hits', duration: '4:07', path: 'Music/Hindi/Jaana Samjho Na.mp3', category: 'Hindi', coverArt: 'https://images.pexels.com/photos/167636/pexels-photo-167636.jpeg?auto=compress&cs=tinysrgb&w=300' },
-    { id: '20', title: 'Jai Shri Ram', artist: 'Shubham', album: 'Hindi Hits', duration: '3:15', path: 'Music/Hindi/Jai Shri Ram.mp3', category: 'Hindi', coverArt: 'https://images.pexels.com/photos/167636/pexels-photo-167636.jpeg?auto=compress&cs=tinysrgb&w=300' },
-    { id: '21', title: 'Janiye', artist: 'Shubham', album: 'Hindi Hits', duration: '3:59', path: 'Music/Hindi/Janiye.mp3', category: 'Hindi', coverArt: 'https://images.pexels.com/photos/167636/pexels-photo-167636.jpeg?auto=compress&cs=tinysrgb&w=300' },
-    { id: '22', title: 'Jo Tum Mere Ho', artist: 'Shubham', album: 'Hindi Hits', duration: '4:21', path: 'Music/Hindi/Jo Tum Mere Ho.mp3', category: 'Hindi', coverArt: 'https://images.pexels.com/photos/167636/pexels-photo-167636.jpeg?auto=compress&cs=tinysrgb&w=300' },
-    { id: '23', title: 'Kabhi Jo Baadal Barse', artist: 'Shubham', album: 'Hindi Hits', duration: '4:44', path: 'Music/Hindi/Kabhi Jo Baadal Barse.mp3', category: 'Hindi', coverArt: 'https://images.pexels.com/photos/167636/pexels-photo-167636.jpeg?auto=compress&cs=tinysrgb&w=300' },
-    { id: '24', title: 'Khairiyat', artist: 'Shubham', album: 'Hindi Hits', duration: '5:12', path: 'Music/Hindi/Khairiyat.mp3', category: 'Hindi', coverArt: 'https://images.pexels.com/photos/167636/pexels-photo-167636.jpeg?auto=compress&cs=tinysrgb&w=300' },
-    { id: '25', title: 'Laal Peeli Akhiyaan', artist: 'Shubham', album: 'Hindi Hits', duration: '3:38', path: 'Music/Hindi/Laal Peeli Akhiyaan .mp3', category: 'Hindi', coverArt: 'https://images.pexels.com/photos/167636/pexels-photo-167636.jpeg?auto=compress&cs=tinysrgb&w=300' },
-    { id: '26', title: 'Lut Gaye', artist: 'Shubham', album: 'Hindi Hits', duration: '3:56', path: 'Music/Hindi/Lut Gaye.mp3', category: 'Hindi', coverArt: 'https://images.pexels.com/photos/167636/pexels-photo-167636.jpeg?auto=compress&cs=tinysrgb&w=300' },
-    { id: '27', title: 'Maan Meri Jaan', artist: 'Shubham', album: 'Hindi Hits', duration: '3:29', path: 'Music/Hindi/Maan Meri Jaan.mp3', category: 'Hindi', coverArt: 'https://images.pexels.com/photos/167636/pexels-photo-167636.jpeg?auto=compress&cs=tinysrgb&w=300' },
-    { id: '28', title: 'Made In India', artist: 'Shubham', album: 'Hindi Hits', duration: '4:18', path: 'Music/Hindi/Made In India.mp3', category: 'Hindi', coverArt: 'https://images.pexels.com/photos/167636/pexels-photo-167636.jpeg?auto=compress&cs=tinysrgb&w=300' },
-    { id: '29', title: 'Mehendi Wale Haath', artist: 'Shubham', album: 'Hindi Hits', duration: '4:02', path: 'Music/Hindi/Mehendi Wale Haath.mp3', category: 'Hindi', coverArt: 'https://images.pexels.com/photos/167636/pexels-photo-167636.jpeg?auto=compress&cs=tinysrgb&w=300' },
-    { id: '30', title: 'Mere Mehboob Mere Sanam', artist: 'Shubham', album: 'Hindi Hits', duration: '4:36', path: 'Music/Hindi/Mere Mehboob Mere Sanam.mp3', category: 'Hindi', coverArt: 'https://images.pexels.com/photos/167636/pexels-photo-167636.jpeg?auto=compress&cs=tinysrgb&w=300' },
-    { id: '31', title: 'Meri Zindagi Hai Tu', artist: 'Shubham', album: 'Hindi Hits', duration: '4:11', path: 'Music/Hindi/Meri Zindagi Hai Tu.mp3', category: 'Hindi', coverArt: 'https://images.pexels.com/photos/167636/pexels-photo-167636.jpeg?auto=compress&cs=tinysrgb&w=300' },
-    { id: '32', title: 'Morni', artist: 'Shubham', album: 'Hindi Hits', duration: '3:44', path: 'Music/Hindi/Morni.mp3', category: 'Hindi', coverArt: 'https://images.pexels.com/photos/167636/pexels-photo-167636.jpeg?auto=compress&cs=tinysrgb&w=300' },
-    { id: '33', title: 'Naacho Naacho', artist: 'Shubham', album: 'Hindi Hits', duration: '4:25', path: 'Music/Hindi/Naacho Naacho.mp3', category: 'Hindi', coverArt: 'https://images.pexels.com/photos/167636/pexels-photo-167636.jpeg?auto=compress&cs=tinysrgb&w=300' },
-    { id: '34', title: 'Nadaaniyan', artist: 'Shubham', album: 'Hindi Hits', duration: '3:51', path: 'Music/Hindi/Nadaaniyan.mp3', category: 'Hindi', coverArt: 'https://images.pexels.com/photos/167636/pexels-photo-167636.jpeg?auto=compress&cs=tinysrgb&w=300' },
-    { id: '35', title: 'Paani Paani', artist: 'Shubham', album: 'Hindi Hits', duration: '3:17', path: 'Music/Hindi/Paani Paani.mp3', category: 'Hindi', coverArt: 'https://images.pexels.com/photos/167636/pexels-photo-167636.jpeg?auto=compress&cs=tinysrgb&w=300' },
-    { id: '36', title: 'Pal', artist: 'Shubham', album: 'Hindi Hits', duration: '4:39', path: 'Music/Hindi/Pal.mp3', category: 'Hindi', coverArt: 'https://images.pexels.com/photos/167636/pexels-photo-167636.jpeg?auto=compress&cs=tinysrgb&w=300' },
-    { id: '37', title: 'Pehle Bhi Main', artist: 'Shubham', album: 'Hindi Hits', duration: '3:48', path: 'Music/Hindi/Pehle Bhi Main.mp3', category: 'Hindi', coverArt: 'https://images.pexels.com/photos/167636/pexels-photo-167636.jpeg?auto=compress&cs=tinysrgb&w=300' },
-    { id: '38', title: 'Photo', artist: 'Shubham', album: 'Hindi Hits', duration: '3:24', path: 'Music/Hindi/Photo.mp3', category: 'Hindi', coverArt: 'https://images.pexels.com/photos/167636/pexels-photo-167636.jpeg?auto=compress&cs=tinysrgb&w=300' },
-    { id: '39', title: 'Raataan Lambiyan', artist: 'Shubham', album: 'Hindi Hits', duration: '4:13', path: 'Music/Hindi/Raataan Lambiyan.mp3', category: 'Hindi', coverArt: 'https://images.pexels.com/photos/167636/pexels-photo-167636.jpeg?auto=compress&cs=tinysrgb&w=300' },
-    { id: '40', title: 'Ram Siya Ram', artist: 'Shubham', album: 'Hindi Hits', duration: '4:07', path: 'Music/Hindi/Ram Siya Ram.mp3', category: 'Hindi', coverArt: 'https://images.pexels.com/photos/167636/pexels-photo-167636.jpeg?auto=compress&cs=tinysrgb&w=300' },
-    { id: '41', title: 'Saari Duniya Jalaa Denge', artist: 'Shubham', album: 'Hindi Hits', duration: '3:35', path: 'Music/Hindi/Saari Duniya Jalaa Denge.mp3', category: 'Hindi', coverArt: 'https://images.pexels.com/photos/167636/pexels-photo-167636.jpeg?auto=compress&cs=tinysrgb&w=300' },
-    { id: '42', title: 'Saiyaan Ji', artist: 'Shubham', album: 'Hindi Hits', duration: '4:22', path: 'Music/Hindi/Saiyaan Ji.mp3', category: 'Hindi', coverArt: 'https://images.pexels.com/photos/167636/pexels-photo-167636.jpeg?auto=compress&cs=tinysrgb&w=300' },
-    { id: '43', title: 'Satranga', artist: 'Shubham', album: 'Hindi Hits', duration: '4:16', path: 'Music/Hindi/Satranga.mp3', category: 'Hindi', coverArt: 'https://images.pexels.com/photos/167636/pexels-photo-167636.jpeg?auto=compress&cs=tinysrgb&w=300' },
-    { id: '44', title: 'Soni Soni', artist: 'Shubham', album: 'Hindi Hits', duration: '3:42', path: 'Music/Hindi/Soni Soni.mp3', category: 'Hindi', coverArt: 'https://images.pexels.com/photos/167636/pexels-photo-167636.jpeg?auto=compress&cs=tinysrgb&w=300' },
-    { id: '45', title: 'Teri Baaton Mein Aisa Uljha Jiya', artist: 'Shubham', album: 'Hindi Hits', duration: '4:58', path: 'Music/Hindi/Teri Baaton Mein Aisa Uljha Jiya.mp3', category: 'Hindi', coverArt: 'https://images.pexels.com/photos/167636/pexels-photo-167636.jpeg?auto=compress&cs=tinysrgb&w=300' },
-    { id: '46', title: 'Thoda Thoda Pyaar', artist: 'Shubham', album: 'Hindi Hits', duration: '3:31', path: 'Music/Hindi/Thoda Thoda Pyaar.mp3', category: 'Hindi', coverArt: 'https://images.pexels.com/photos/167636/pexels-photo-167636.jpeg?auto=compress&cs=tinysrgb&w=300' },
-    { id: '47', title: 'Tu Hi Yaar Mera', artist: 'Shubham', album: 'Hindi Hits', duration: '4:45', path: 'Music/Hindi/Tu Hi Yaar Mera.mp3', category: 'Hindi', coverArt: 'https://images.pexels.com/photos/167636/pexels-photo-167636.jpeg?auto=compress&cs=tinysrgb&w=300' },
-    { id: '48', title: 'Tum Hi Ho', artist: 'Shubham', album: 'Hindi Hits', duration: '4:20', path: 'Music/Hindi/Tum Hi Ho.mp3', category: 'Hindi', coverArt: 'https://images.pexels.com/photos/167636/pexels-photo-167636.jpeg?auto=compress&cs=tinysrgb&w=300' },
-    { id: '49', title: 'Tum Mere Ho', artist: 'Shubham', album: 'Hindi Hits', duration: '3:54', path: 'Music/Hindi/Tum Mere Ho.mp3', category: 'Hindi', coverArt: 'https://images.pexels.com/photos/167636/pexels-photo-167636.jpeg?auto=compress&cs=tinysrgb&w=300' },
-    { id: '50', title: 'Tum Se', artist: 'Shubham', album: 'Hindi Hits', duration: '4:08', path: 'Music/Hindi/Tum_Se.mp3', category: 'Hindi', coverArt: 'https://images.pexels.com/photos/167636/pexels-photo-167636.jpeg?auto=compress&cs=tinysrgb&w=300' },
-    { id: '51', title: 'Wajah Tum Ho', artist: 'Shubham', album: 'Hindi Hits', duration: '4:29', path: 'Music/Hindi/Wajah Tum Ho.mp3', category: 'Hindi', coverArt: 'https://images.pexels.com/photos/167636/pexels-photo-167636.jpeg?auto=compress&cs=tinysrgb&w=300' },
-    { id: '52', title: 'What Jhumka', artist: 'Shubham', album: 'Hindi Hits', duration: '3:37', path: 'Music/Hindi/What Jhumka.mp3', category: 'Hindi', coverArt: 'https://images.pexels.com/photos/167636/pexels-photo-167636.jpeg?auto=compress&cs=tinysrgb&w=300' },
+    { id: '1', title: 'Aaj Ki Raat', artist: 'Shubham', album: 'Hindi Hits', duration: '3:45', path: 'https://pub-37cf881274d54311b74590101d521571.r2.dev/Music/Hindi/Aaj%20Ki%20Raat.mp3', category: 'Hindi', coverArt: 'thumbnails/1000054613.jpg' },
+    { id: '2', title: 'Aaj Phir', artist: 'Shubham', album: 'Hindi Hits', duration: '4:12', path: 'https://pub-37cf881274d54311b74590101d521571.r2.dev/Music/Hindi/Aaj%20Phir.mp3', category: 'Hindi', coverArt: 'thumbnails/5000000.jpg'},
+    { id: '3', title: 'Aayi Nai', artist: 'Shubham', album: 'Hindi Hits', duration: '3:28', path: 'https://pub-37cf881274d54311b74590101d521571.r2.dev/Music/Hindi/Aayi%20Nai.mp3', category: 'Hindi', coverArt: 'thumbnails/1000054651.jpg' },
+    { id: '4', title: 'Apna Bana Le', artist: 'Shubham', album: 'Hindi Hits', duration: '4:01', path: 'Music/Hindi/Apna_Bana_Le.mp3', category: 'Hindi', coverArt: 'thumbnails/1000054592.jpg' },
+    { id: '5', title: 'Baarish Ban Jaana', artist: 'Shubham', album: 'Hindi Hits', duration: '3:55', path: 'https://pub-37cf881274d54311b74590101d521571.r2.dev/Music/Hindi/Baarish%20Ban%20Jaana.mp3', category: 'Hindi', coverArt: 'thumbnails/1000054607.jpg' },
+    { id: '6', title: 'Baby Girl', artist: 'Shubham', album: 'Hindi Hits', duration: '3:33', path: 'https://pub-37cf881274d54311b74590101d521571.r2.dev/Music/Hindi/Baby%20Girl.mp3', category: 'Hindi', coverArt: 'thumbnails/1000054622.jpg' },
+    { id: '7', title: 'Bachpan Ka Pyaar', artist: 'Shubham', album: 'Hindi Hits', duration: '2:58', path: 'https://pub-37cf881274d54311b74590101d521571.r2.dev/Music/Hindi/Bachpan%20Ka%20Pyaar.mp3', category: 'Hindi', coverArt: 'thumbnails/1000054619.jpg' },
+    { id: '8', title: 'Buzz', artist: 'Shubham', album: 'Hindi Hits', duration: '3:22', path: 'https://pub-37cf881274d54311b74590101d521571.r2.dev/Music/Hindi/Buzz.mp3', category: 'Hindi', coverArt: 'thumbnails/1000054629.jpg' },
+    { id: '9', title: 'De Taali', artist: 'Shubham', album: 'Hindi Hits', duration: '4:15', path: 'https://pub-37cf881274d54311b74590101d521571.r2.dev/Music/Hindi/De%20Taali.mp3', category: 'Hindi', coverArt: 'thumbnails/1000054617.jpg' },
+    { id: '10', title: 'Dekhte Dekhte', artist: 'Shubham', album: 'Hindi Hits', duration: '4:28', path: 'https://pub-37cf881274d54311b74590101d521571.r2.dev/Music/Hindi/Dekhte%20Dekhte.mp3', category: 'Hindi', coverArt: 'thumbnails/1000054633.jpg' },
+    { id: '11', title: 'Dheere Dheer', artist: 'Shubham', album: 'Hindi Hits', duration: '3:47', path: 'https://pub-37cf881274d54311b74590101d521571.r2.dev/Music/Hindi/Dheere%20Dheere.mp3', category: 'Hindi', coverArt: 'thumbnails/1000054618.jpg' },
+    { id: '12', title: 'Dil Mein Chhupa Loonga', artist: 'Shubham', album: 'Hindi Hits', duration: '3:52', path: 'https://pub-37cf881274d54311b74590101d521571.r2.dev/Music/Hindi/Dil%20Mein%20Chhupa%20Loonga.mp3', category: 'Hindi', coverArt: 'thumbnails/1000054601.jpg' },
+    { id: '13', title: 'Dosti', artist: 'Shubham', album: 'Hindi Hits', duration: '4:05', path: 'https://pub-37cf881274d54311b74590101d521571.r2.dev/Music/Hindi/Dosti.mp3', category: 'Hindi', coverArt: 'thumbnails/1000054602.jpg' },
+    { id: '14', title: 'Duniyaa', artist: 'Shubham', album: 'Hindi Hits', duration: '3:41', path: 'https://pub-37cf881274d54311b74590101d521571.r2.dev/Music/Hindi/Duniyaa.mp3', category: 'Hindi', coverArt: 'thumbnails/1000054608.jpg' },
+    { id: '15', title: 'Garmi', artist: 'Shubham', album: 'Hindi Hits', duration: '3:18', path: 'https://pub-37cf881274d54311b74590101d521571.r2.dev/Music/Hindi/Garmi.mp3', category: 'Hindi', coverArt: 'thumbnails/1000054626.jpg' },
+    { id: '16', title: 'Genda Phool', artist: 'Shubham', album: 'Hindi Hits', duration: '2:48', path: 'https://pub-37cf881274d54311b74590101d521571.r2.dev/Music/Hindi/Genda%20Phool.mp3', category: 'Hindi', coverArt: 'thumbnails/1000054621.jpg' },
+    { id: '17', title: 'Heeriye', artist: 'Shubham', album: 'Hindi Hits', duration: '4:33', path: 'https://pub-37cf881274d54311b74590101d521571.r2.dev/Music/Hindi/Heeriye.mp3', category: 'Hindi', coverArt: 'thumbnails/1000054614.jpg' },
+    { id: '18', title: 'Hua Main', artist: 'Shubham', album: 'Hindi Hits', duration: '3:26', path: 'Music/Hindi/Hua Main.mp3', category: 'Hindi', coverArt: 'thumbnails/1000054596.jpg' },
+    { id: '19', title: 'Jaana Samjho Na', artist: 'Shubham', album: 'Hindi Hits', duration: '4:07', path: 'https://pub-37cf881274d54311b74590101d521571.r2.dev/Music/Hindi/Jaana%20Samjho%20Na.mp3', category: 'Hindi', coverArt: 'thumbnails/1002054587.jpg' },
+    { id: '20', title: 'Jai Shri Ram', artist: 'Shubham', album: 'Hindi Hits', duration: '3:15', path: 'https://pub-37cf881274d54311b74590101d521571.r2.dev/Music/Hindi/Jai%20Shri%20Ram.mp3', category: 'Hindi', coverArt: 'thumbnails/1000054604.jpg' },
+    { id: '21', title: 'Janiye', artist: 'Shubham', album: 'Hindi Hits', duration: '3:59', path: 'https://pub-37cf881274d54311b74590101d521571.r2.dev/Music/Hindi/Janiye.mp3', category: 'Hindi', coverArt: 'thumbnails/1000054660.jpg' },
+    { id: '22', title: 'Jo Tum Mere Ho', artist: 'Shubham', album: 'Hindi Hits', duration: '4:21', path: 'https://pub-37cf881274d54311b74590101d521571.r2.dev/Music/Hindi/Jo%20Tum%20Mere%20Ho.mp3', category: 'Hindi', coverArt: 'thumbnails/120.jpg' },
+    { id: '23', title: 'Kabhi Jo Baadal Barse', artist: 'Shubham', album: 'Hindi Hits', duration: '4:44', path: 'https://pub-37cf881274d54311b74590101d521571.r2.dev/Music/Hindi/Kabhi%20Jo%20Baadal%20Barse.mp3', category: 'Hindi', coverArt: 'thumbnails/1000054654.jpg' },
+    { id: '24', title: 'Khairiyat', artist: 'Shubham', album: 'Hindi Hits', duration: '5:12', path: 'https://pub-37cf881274d54311b74590101d521571.r2.dev/Music/Hindi/Khairiyat.mp3', category: 'Hindi', coverArt: 'thumbnails/1000054585.jpg' },
+    { id: '25', title: 'Laal Peeli Akhiyaan', artist: 'Shubham', album: 'Hindi Hits', duration: '3:38', path: 'Music/Hindi/Laal Peeli Akhiyaan .mp3', category: 'Hindi', coverArt: 'thumbnails/1000054590.jpg' },
+    { id: '26', title: 'Lut Gaye', artist: 'Shubham', album: 'Hindi Hits', duration: '3:56', path: 'https://pub-37cf881274d54311b74590101d521571.r2.dev/Music/Hindi/Lut%20Gaye.mp3', category: 'Hindi', coverArt: 'thumbnails/1000054591.jpg' },
+    { id: '27', title: 'Maan Meri Jaan', artist: 'Shubham', album: 'Hindi Hits', duration: '3:29', path: 'https://pub-37cf881274d54311b74590101d521571.r2.dev/Music/Hindi/Maan%20Meri%20Jaan.mp3', category: 'Hindi', coverArt: 'thumbnails/1000054587.jpg' },
+    { id: '28', title: 'Made In India', artist: 'Shubham', album: 'Hindi Hits', duration: '4:18', path: 'https://pub-37cf881274d54311b74590101d521571.r2.dev/Music/Hindi/Made%20In%20India.mp3', category: 'Hindi', coverArt: 'thumbnails/1000054581.jpg' },
+    { id: '29', title: 'Mehendi Wale Haath', artist: 'Shubham', album: 'Hindi Hits', duration: '4:02', path: 'Music/Hindi/Mehendi Wale Haath.mp3', category: 'Hindi', coverArt: 'thumbnails/1000054655.jpg' },
+    { id: '30', title: 'Mere Mehboob Mere Sanam', artist: 'Shubham', album: 'Hindi Hits', duration: '4:36', path: 'Music/Hindi/Mere Mehboob Mere Sanam.mp3', category: 'Hindi', coverArt: 'thumbnails/1000054606.jpg' },
+    { id: '31', title: 'Meri Zindagi Hai Tu', artist: 'Shubham', album: 'Hindi Hits', duration: '4:11', path: 'Music/Hindi/Meri Zindagi Hai Tu.mp3', category: 'Hindi', coverArt: 'thumbnails/1000054625.jpg' },
+    { id: '32', title: 'Morni', artist: 'Shubham', album: 'Hindi Hits', duration: '3:44', path: 'Music/Hindi/Morni.mp3', category: 'Hindi', coverArt: 'thumbnails/1000054653.jpg' },
+    { id: '33', title: 'Naacho Naacho', artist: 'Shubham', album: 'Hindi Hits', duration: '4:25', path: 'Music/Hindi/Naacho Naacho.mp3', category: 'Hindi', coverArt: 'thumbnails/1000054603.jpg' },
+    { id: '34', title: 'Nadaaniyan', artist: 'Shubham', album: 'Hindi Hits', duration: '3:51', path: 'Music/Hindi/Nadaaniyan.mp3', category: 'Hindi', coverArt: 'thumbnails/1000054650.jpg' },
+    { id: '35', title: 'Paani Paani', artist: 'Shubham', album: 'Hindi Hits', duration: '3:17', path: 'Music/Hindi/Paani Paani.mp3', category: 'Hindi', coverArt: 'thumbnails/1000054623.jpg' },
+    { id: '36', title: 'Pal', artist: 'Shubham', album: 'Hindi Hits', duration: '4:39', path: 'Music/Hindi/Pal.mp3', category: 'Hindi', coverArt: 'thumbnails/1000054657.jpg' },
+    { id: '37', title: 'Pehle Bhi Main', artist: 'Shubham', album: 'Hindi Hits', duration: '3:48', path: 'Music/Hindi/Pehle Bhi Main.mp3', category: 'Hindi', coverArt: 'thumbnails/18.jpg' },
+    { id: '38', title: 'Photo', artist: 'Shubham', album: 'Hindi Hits', duration: '3:24', path: 'Music/Hindi/Photo.mp3', category: 'Hindi', coverArt: 'thumbnails/17.jpg' },
+    { id: '39', title: 'Raataan Lambiyan', artist: 'Shubham', album: 'Hindi Hits', duration: '4:13', path: 'Music/Hindi/Raataan Lambiyan.mp3', category: 'Hindi', coverArt: 'thumbnails/1000054627.jpg' },
+    { id: '40', title: 'Ram Siya Ram', artist: 'Shubham', album: 'Hindi Hits', duration: '4:07', path: 'Music/Hindi/Ram Siya Ram.mp3', category: 'Hindi', coverArt: 'thumbnails/1000054658.jpg' },
+    { id: '41', title: 'Saari Duniya Jalaa Denge', artist: 'Shubham', album: 'Hindi Hits', duration: '3:35', path: 'Music/Hindi/Saari Duniya Jalaa Denge.mp3', category: 'Hindi', coverArt: 'thumbnails/1000054594.jpg' },
+    { id: '42', title: 'Saiyaan Ji', artist: 'Shubham', album: 'Hindi Hits', duration: '4:22', path: 'Music/Hindi/Saiyaan Ji.mp3', category: 'Hindi', coverArt: 'thumbnails/1000054610.jpg' },
+    { id: '43', title: 'Satranga', artist: 'Shubham', album: 'Hindi Hits', duration: '4:16', path: 'Music/Hindi/Satranga.mp3', category: 'Hindi', coverArt: 'thumbnails/1000054595.jpg' },
+    { id: '44', title: 'Soni Soni', artist: 'Shubham', album: 'Hindi Hits', duration: '3:42', path: 'Music/Hindi/Soni Soni.mp3', category: 'Hindi', coverArt: 'thumbnails/1000054659.jpg' },
+    { id: '45', title: 'Teri Baaton Mein Aisa Uljha Jiya', artist: 'Shubham', album: 'Hindi Hits', duration: '4:58', path: 'Music/Hindi/Teri Baaton Mein Aisa Uljha Jiya.mp3', category: 'Hindi', coverArt: 'thumbnails/1000054591.jpg' },
+    { id: '46', title: 'Thoda Thoda Pyaar', artist: 'Shubham', album: 'Hindi Hits', duration: '3:31', path: 'Music/Hindi/Thoda Thoda Pyaar.mp3', category: 'Hindi', coverArt: 'thumbnails/1000054656.jpg' },
+    { id: '47', title: 'Tu Hi Yaar Mera', artist: 'Shubham', album: 'Hindi Hits', duration: '4:45', path: 'Music/Hindi/Tu Hi Yaar Mera.mp3', category: 'Hindi', coverArt: 'thumbnails/1000054620.jpg' },
+    { id: '48', title: 'Tum Hi Ho', artist: 'Shubham', album: 'Hindi Hits', duration: '4:20', path: 'Music/Hindi/Tum Hi Ho.mp3', category: 'Hindi', coverArt: 'thumbnails/1000054652.jpg' },
+    { id: '49', title: 'Tum Mere Ho', artist: 'Shubham', album: 'Hindi Hits', duration: '3:54', path: 'Music/Hindi/Tum Mere Ho.mp3', category: 'Hindi', coverArt: 'thumbnails/1000054599.jpg' },
+    { id: '50', title: 'Tum Se', artist: 'Shubham', album: 'Hindi Hits', duration: '4:08', path: 'Music/Hindi/Tum_Se.mp3', category: 'Hindi', coverArt: 'thumbnails/1000054630.jpg' },
+    { id: '51', title: 'Wajah Tum Ho', artist: 'Shubham', album: 'Hindi Hits', duration: '4:29', path: 'Music/Hindi/Wajah Tum Ho.mp3', category: 'Hindi', coverArt: 'thumbnails/1000054601.jpg' },
+    { id: '52', title: 'What Jhumka', artist: 'Shubham', album: 'Hindi Hits', duration: '3:37', path: 'Music/Hindi/What Jhumka.mp3', category: 'Hindi', coverArt: 'thumbnails/1000054588.jpg' },
     
     // Bhojpuri Music
-    { id: '100', title: 'Arrah_Ke_Othlali', artist: 'Shubham', album: 'Bhojpuri Collection', duration: '4:07', path: 'Music/Bhojpuri/Arrah_Ke_Othlali.mp3', category: 'Bhojpuri', coverArt: 'https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=300' },
-    { id: '101', title: 'Neelkamal Singh', artist: 'Shubham', album: 'Bhojpuri Collection', duration: '3:31', path: 'Music/Bhojpuri/Neelkamal Singh.mp3', category: 'Bhojpuri', coverArt: 'https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=300' },
-    { id: '102', title: 'Akhiyan Ke Kajra Jhagda Kara Dele Ba', artist: 'Shubham', album: 'Bhojpuri Collection', duration: '3:30', path: 'Music/bhojpuri/Akhiya Ke Kajra Jhagda Kara Dele Ba.mp3', category: 'Bhojpuri', coverArt: 'https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=300' },
-    { id: '103', title: 'Ara Me Dobara', artist: 'Shubham', album: 'Bhojpuri Collection', duration: '3:30', path: 'Music/bhojpuri/Ara Me Dobara.mp3', category: 'Bhojpuri', coverArt: 'https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=300' },
-    { id: '104', title: 'Bas Kar Pagli', artist: 'Shubham', album: 'Bhojpuri Collection', duration: '3:30', path: 'Music/bhojpuri/Bas Kar Pagli.mp3', category: 'Bhojpuri', coverArt: 'https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=300' },
-    { id: '105', title: 'Humk Dulhan Banaal', artist: 'Shubham', album: 'Bhojpuri Collection', duration: '3:30', path: 'Music/bhojpuri/Humk Dulhan Banaal.mp3', category: 'Bhojpuri', coverArt: 'https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=300' },
-    { id: '106', title: 'Kamariya Dole', artist: 'Shubham', album: 'Bhojpuri Collection', duration: '3:30', path: 'Music/bhojpuri/Kamariya Dole.mp3', category: 'Bhojpuri', coverArt: 'https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=300' },
-    { id: '107', title: 'Lagelu Jahar', artist: 'Shubham', album: 'Bhojpuri Collection', duration: '3:30', path: 'Music/bhojpuri/Lagelu Jahar.mp3', category: 'Bhojpuri', coverArt: 'https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=300' },
-    { id: '108', title: 'Maroon Color Sadiya', artist: 'Shubham', album: 'Bhojpuri Collection', duration: '3:30', path: 'Music/bhojpuri/Maroon Color Sadiya.mp3', category: 'Bhojpuri', coverArt: 'https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=300' },
-    { id: '109', title: 'Paani Paani', artist: 'Shubham', album: 'Bhojpuri Collection', duration: '3:30', path: 'Music/bhojpuri/Paani Paani.mp3', category: 'Bhojpuri', coverArt: 'https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=300' },
-    { id: '110', title: 'Pagli Dekhave Agrabatti', artist: 'Shubham', album: 'Bhojpuri Collection', duration: '3:30', path: 'Music/bhojpuri/Pagli Dekhave Agrabatti.mp3', category: 'Bhojpuri', coverArt: 'https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=300' },
-    { id: '111', title: 'Godi Me Leke', artist: 'Shubham', album: 'Bhojpuri Collection', duration: '3:30', path: 'Music/bhojpuri/Godi Me Leke.mp3', category: 'Bhojpuri', coverArt: 'https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=300' },
-    { id: '112', title: 'Piyar Farak Wali', artist: 'Shubham', album: 'Bhojpuri Collection', duration: '3:30', path: 'Music/bhojpuri/Piyar Farak Wali.mp3', category: 'Bhojpuri', coverArt: 'https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=300' },
-    { id: '113', title: 'Rajaji Ke Dilwa', artist: 'Shubham', album: 'Bhojpuri Collection', duration: '3:30', path: 'Music/bhojpuri/Rajaji Ke Dilwa.mp3', category: 'Bhojpuri', coverArt: 'https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=300' },
-    { id: '114', title: 'Tumsa Koi Pyara', artist: 'Shubham', album: 'Bhojpuri Collection', duration: '3:30', path: 'Music/bhojpuri/Tumsa Koi Pyara.mp3', category: 'Bhojpuri', coverArt: 'https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=300' },
+    { id: '100', title: 'Arrah Ke Othlali', artist: 'Shubham', album: 'Bhojpuri Collection', duration: '4:07', path: 'Music/Bhojpuri/Arrah_Ke_Othlali.mp3', category: 'Bhojpuri', coverArt: 'thumbnails/1000054361.jpg' },
+    { id: '101', title: 'Neelkamal Singh', artist: 'Shubham', album: 'Bhojpuri Collection', duration: '3:31', path: 'Music/Bhojpuri/Neelkamal Singh.mp3', category: 'Bhojpuri', coverArt: 'thumbnails/1000054352.jpg' },
+    { id: '102', title: 'Akhiyan Ke Kajra Jhagda Kara Dele Ba', artist: 'Shubham', album: 'Bhojpuri Collection', duration: '3:30', path: 'Music/bhojpuri/Akhiya Ke Kajra Jhagda Kara Dele Ba.mp3', category: 'Bhojpuri', coverArt: 'thumbnails/1000054353.jpg' },
+    { id: '103', title: 'Ara Me Dobara', artist: 'Shubham', album: 'Bhojpuri Collection', duration: '3:30', path: 'Music/bhojpuri/Ara Me Dobara.mp3', category: 'Bhojpuri', coverArt: 'thumbnails/1000054362.jpg' },
+    { id: '104', title: 'Bas Kar Pagli', artist: 'Shubham', album: 'Bhojpuri Collection', duration: '3:30', path: 'Music/bhojpuri/Bas Kar Pagli.mp3', category: 'Bhojpuri', coverArt: 'thumbnails/1000054355.jpg' },
+    { id: '105', title: 'Humk Dulhan Banaal', artist: 'Shubham', album: 'Bhojpuri Collection', duration: '3:30', path: 'Music/bhojpuri/Humk Dulhan Banaal.mp3', category: 'Bhojpuri', coverArt: 'thumbnails/1000054354.jpg' },
+    { id: '106', title: 'Kamariya Dole', artist: 'Shubham', album: 'Bhojpuri Collection', duration: '3:30', path: 'Music/bhojpuri/Kamariya Dole.mp3', category: 'Bhojpuri', coverArt: 'thumbnails/1000054351.jpg' },
+    { id: '107', title: 'Lagelu Jahar', artist: 'Shubham', album: 'Bhojpuri Collection', duration: '3:30', path: 'Music/bhojpuri/Lagelu Jahar.mp3', category: 'Bhojpuri', coverArt: 'thumbnails/1000054357.jpg' },
+    { id: '108', title: 'Maroon Color Sadiya', artist: 'Shubham', album: 'Bhojpuri Collection', duration: '3:30', path: 'Music/bhojpuri/Maroon Color Sadiya.mp3', category: 'Bhojpuri', coverArt: 'thumbnails/1000054356.jpg' },
+    { id: '109', title: 'Paani Paani (Bhojpuri)', artist: 'Shubham', album: 'Bhojpuri Collection', duration: '3:30', path: 'Music/bhojpuri/Paani Paani.mp3', category: 'Bhojpuri', coverArt: 'thumbnails/1000054645.jpg' },
+    { id: '110', title: 'Pagli Dekhave Agrabatti', artist: 'Shubham', album: 'Bhojpuri Collection', duration: '3:30', path: 'Music/bhojpuri/Pagli Dekhave Agrabatti.mp3', category: 'Bhojpuri', coverArt: 'thumbnails/1000054350.jpg' },
+    { id: '111', title: 'Godi Me Leke', artist: 'Shubham', album: 'Bhojpuri Collection', duration: '3:30', path: 'Music/bhojpuri/Godi Me Leke.mp3', category: 'Bhojpuri', coverArt: 'thumbnails/1000054353.jpg' },
+    { id: '112', title: 'Piyar Farak Wali', artist: 'Shubham', album: 'Bhojpuri Collection', duration: '3:30', path: 'Music/bhojpuri/Piyar Farak Wali.mp3', category: 'Bhojpuri', coverArt: 'thumbnails/1000054354.jpg' },
+    { id: '113', title: 'Rajaji Ke Dilwa', artist: 'Shubham', album: 'Bhojpuri Collection', duration: '3:30', path: 'Music/bhojpuri/Rajaji Ke Dilwa.mp3', category: 'Bhojpuri', coverArt: 'thumbnails/1000054362.jpg' },
+    { id: '114', title: 'Tumsa Koi Pyara', artist: 'Shubham', album: 'Bhojpuri Collection', duration: '3:30', path: 'Music/bhojpuri/Tumsa Koi Pyara.mp3', category: 'Bhojpuri', coverArt: 'thumbnails/1000054362.jpg' },
     
     // Other Music
     { id: '200', title: 'Other Hit 1', artist: 'Shubham', album: 'Other Collection', duration: '3:58', path: 'Music/Other/sample1.mp3', category: 'Other', coverArt: 'https://images.pexels.com/photos/1540338/pexels-photo-1540338.jpeg?auto=compress&cs=tinysrgb&w=300' },
@@ -144,6 +144,8 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function initializeApp() {
+    const initialTracks = getFilteredTracks();
+    console.log('Initial filtered tracks count:', initialTracks.length); // Debugging line
     updateDisplay();
     updatePlayerDisplay();
 }
@@ -173,16 +175,44 @@ function setupEventListeners() {
     // Play all button
     playAllBtn.addEventListener('click', playAll);
 
-    // Mini Player controls
-    playPauseBtn.addEventListener('click', togglePlayPause);
-    prevBtn.addEventListener('click', playPrevious);
-    nextBtn.addEventListener('click', playNext);
+    // Mini Player controls - Added e.stopPropagation() to prevent opening full player
+    playPauseBtn.addEventListener('click', function(e) {
+        e.stopPropagation(); 
+        togglePlayPause();
+    });
+    prevBtn.addEventListener('click', function(e) {
+        e.stopPropagation(); 
+        playPrevious();
+    });
+    nextBtn.addEventListener('click', function(e) {
+        e.stopPropagation(); 
+        playNext();
+    });
 
-    // Mini Player Progress bar
-    progressBar.addEventListener('click', seekToPosition);
+    const shuffleBtn = document.querySelector('.shuffle-btn');
+    if (shuffleBtn) {
+        shuffleBtn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            // Add shuffle functionality here if needed
+        });
+    }
+    const repeatBtn = document.querySelector('.repeat-btn');
+    if (repeatBtn) {
+        repeatBtn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            // Add repeat functionality here if needed
+        });
+    }
 
-    // Mini Player Volume control
-    volumeSlider.addEventListener('input', function() {
+    // Progress bar
+    progressBar.addEventListener('click', function(e) {
+        e.stopPropagation(); 
+        seekToPosition(e);
+    });
+
+    // Volume control
+    volumeSlider.addEventListener('input', function(e) {
+        e.stopPropagation(); 
         if (audioPlayer) {
             audioPlayer.volume = this.value / 100;
             fullVolumeSlider.value = this.value; // Sync full player volume
@@ -190,7 +220,10 @@ function setupEventListeners() {
     });
 
     // Full-screen Player functionality
+    // This listener now applies to the whole musicPlayer div
+    // A click on any non-control part of the music-player will open the full screen player
     musicPlayer.addEventListener('click', openFullScreenPlayer);
+    
     closeFullScreenPlayerBtn.addEventListener('click', closeFullScreenPlayer);
     fullPlayPauseBtn.addEventListener('click', togglePlayPause);
     fullPrevBtn.addEventListener('click', playPrevious);
@@ -305,7 +338,7 @@ function getCategoryInfo() {
             };
         default:
             return {
-                title: 'All Music',
+                title: 'SHUBHAM MUSIC',
                 description: 'Complete collection of all your favorite songs',
                 coverArt: 'https://images.pexels.com/photos/167636/pexels-photo-167636.jpeg?auto=compress&cs=tinysrgb&w=500'
             };
@@ -603,7 +636,7 @@ function updateTrackListDisplay() {
         if (isCurrentItem) {
             playIcon.className = `fas ${isPlaying ? 'fa-pause' : 'fa-play'} play-icon`;
         } else {
-            playIcon.className = 'fas fa-play play-icon';
+            playIcon.className = 'fas fa-play play-icon'; 
         }
     });
 }
@@ -657,7 +690,7 @@ function openFullScreenPlayer() {
     updatePlayerDisplay();
 }
 
-function closeFullScreenPlayer() {
+function closeFullScreenPlayer(e) {
+    e.stopPropagation(); // Stop propagation for the close button itself
     fullScreenPlayer.classList.remove('visible');
 }
-
