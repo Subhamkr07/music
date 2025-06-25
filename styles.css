@@ -738,12 +738,16 @@ body {
     display: flex;
     flex-direction: column;
     padding: 20px;
-    transition: transform 0.3s ease-in-out;
-    transform: translateY(100%); /* Hidden by default */
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    transform: translateY(100%); /* Hidden by default (slides up) */
+    opacity: 0;
+    visibility: hidden;
 }
 
 .full-screen-player-overlay.visible {
     transform: translateY(0); /* Shown when active */
+    opacity: 1;
+    visibility: visible;
 }
 
 .full-screen-player-header {
@@ -1080,6 +1084,10 @@ body {
         font-size: 24px;
     }
 
+    .category-info p {
+        font-size: 16px;
+    }
+
     .track-list-header,
     .track-item {
         grid-template-columns: 30px 1fr 60px; /* Even smaller columns */
@@ -1159,3 +1167,4 @@ body {
 .app.sidebar-open .sidebar-overlay {
     display: block;
 }
+
