@@ -272,6 +272,7 @@ function updateDisplay() {
     categoryTitle.textContent = categoryInfo.title;
     categoryDescription.textContent = categoryInfo.description;
     categoryImage.src = categoryInfo.coverArt;
+    categoryImage.loading = 'lazy';
     trackCount.textContent = `${filteredTracks.length} songs`;
 
     // Update search results
@@ -359,7 +360,7 @@ function renderTrackList(tracks) {
                 <i class="fas ${currentTrack && currentTrack.id === track.id && isPlaying ? 'fa-pause' : 'fa-play'} play-icon"></i>
             </div>
             <div class="track-info">
-                <img src="${track.coverArt}" alt="${track.title}" class="track-cover">
+                <img src="${track.coverArt}" alt="${track.title}" class="track-cover" loading="lazy">
                 <div class="track-details">
                     <div class="track-title">${track.title}</div>
                     <div class="track-artist">${track.artist}</div>
@@ -578,6 +579,7 @@ function updatePlayerDisplay() {
         currentTrackTitle.textContent = 'Select a song to start playing';
         currentTrackArtist.textContent = '';
         currentTrackImage.src = '';
+        currentTrackImage.loading = 'lazy';
         currentTrackImage.style.display = 'none';
         playPauseBtn.innerHTML = '<i class="fas fa-play"></i>';
 
@@ -586,6 +588,7 @@ function updatePlayerDisplay() {
         fullTrackArtist.textContent = '';
         fullPlayerAlbum.textContent = '';
         fullTrackImage.src = '';
+        fullTrackImage.loading = 'lazy';
         fullTrackImage.style.display = 'none';
         fullPlayPauseBtn.innerHTML = '<i class="fas fa-play"></i>';
         return;
@@ -595,6 +598,7 @@ function updatePlayerDisplay() {
     currentTrackTitle.textContent = currentTrack.title;
     currentTrackArtist.textContent = currentTrack.artist;
     currentTrackImage.src = currentTrack.coverArt;
+    currentTrackImage.loading = 'lazy';
     currentTrackImage.style.display = 'block';
     playPauseBtn.innerHTML = isPlaying ? 
         '<i class="fas fa-pause"></i>' : 
@@ -602,6 +606,7 @@ function updatePlayerDisplay() {
 
     // Full-screen player updates
     fullTrackImage.src = currentTrack.coverArt;
+    fullTrackImage.loading = 'lazy';
     fullTrackImage.style.display = 'block';
     fullTrackTitle.textContent = currentTrack.title;
     fullTrackArtist.textContent = currentTrack.artist;
@@ -656,7 +661,7 @@ function renderTrackList(tracks) {
                 <i class="fas ${currentTrack && currentTrack.id === track.id && isPlaying ? 'fa-pause' : 'fa-play'} play-icon"></i>
             </div>
             <div class="track-info">
-                <img src="${track.coverArt}" alt="${track.title}" class="track-cover">
+                <img src="${track.coverArt}" alt="${track.title}" class="track-cover" loading="lazy">
                 <div class="track-details">
                     <div class="track-title">${track.title}</div>
                     <div class="track-artist">${track.artist}</div>
