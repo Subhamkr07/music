@@ -84,6 +84,8 @@ let isPlaying = false;
 let currentCategory = 'all';
 let searchQuery = '';
 let audioPlayer = null;
+const placeholderImage = 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==';
+let lazyObserver = null;
 
 // DOM elements
 const app = document.querySelector('.app'); // Get the main app container for sidebar control
@@ -139,6 +141,7 @@ audioPlayer = document.getElementById('audioPlayer');
 
 // Event listeners
 document.addEventListener('DOMContentLoaded', function() {
+    setupLazyLoading();
     initializeApp();
     setupEventListeners();
 });
@@ -148,6 +151,49 @@ function initializeApp() {
     console.log('Initial filtered tracks count:', initialTracks.length); // Debugging line
     updateDisplay();
     updatePlayerDisplay();
+}
+
+function setupLazyLoading() {
+    if (!('IntersectionObserver' in window)) {
+        document.querySelectorAll('img.lazy-load[data-src]').forEach(loadLazyImage);
+        return;
+    }
+
+    lazyObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const img = entry.target;
+                if (img.dataset.src) {
+                    loadLazyImage(img);
+                }
+                observer.unobserve(img);
+            }
+        });
+    }, {
+        rootMargin: '100px 0px',
+        threshold: 0.1,
+    });
+}
+
+function observeLazyImage(img) {
+    if (!img || !img.dataset.src) return;
+    if (lazyObserver) {
+        lazyObserver.observe(img);
+    } else {
+        loadLazyImage(img);
+    }
+}
+
+function observeLazyImages(container = document) {
+    const lazyImages = container.querySelectorAll('img.lazy-load[data-src]');
+    lazyImages.forEach(observeLazyImage);
+}
+
+function loadLazyImage(img) {
+    const src = img.dataset.src;
+    if (!src) return;
+    img.src = src;
+    img.removeAttribute('data-src');
 }
 
 function setupEventListeners() {
@@ -271,8 +317,9 @@ function updateDisplay() {
     // Update category header
     categoryTitle.textContent = categoryInfo.title;
     categoryDescription.textContent = categoryInfo.description;
-    categoryImage.src = categoryInfo.coverArt;
+    categoryImage.dataset.src = categoryInfo.coverArt;
     categoryImage.loading = 'lazy';
+    observeLazyImage(categoryImage);
     trackCount.textContent = `${filteredTracks.length} songs`;
 
     // Update search results
@@ -578,7 +625,8 @@ function updatePlayerDisplay() {
         // Mini player
         currentTrackTitle.textContent = 'Select a song to start playing';
         currentTrackArtist.textContent = '';
-        currentTrackImage.src = '';
+        currentTrackImage.src = placeholderImage;
+        currentTrackImage.removeAttribute('data-src');
         currentTrackImage.loading = 'lazy';
         currentTrackImage.style.display = 'none';
         playPauseBtn.innerHTML = '<i class="fas fa-play"></i>';
@@ -587,7 +635,8 @@ function updatePlayerDisplay() {
         fullTrackTitle.textContent = 'Select a song to start playing';
         fullTrackArtist.textContent = '';
         fullPlayerAlbum.textContent = '';
-        fullTrackImage.src = '';
+        fullTrackImage.src = placeholderImage;
+        fullTrackImage.removeAttribute('data-src');
         fullTrackImage.loading = 'lazy';
         fullTrackImage.style.display = 'none';
         fullPlayPauseBtn.innerHTML = '<i class="fas fa-play"></i>';
@@ -597,17 +646,21 @@ function updatePlayerDisplay() {
     // Mini player updates
     currentTrackTitle.textContent = currentTrack.title;
     currentTrackArtist.textContent = currentTrack.artist;
-    currentTrackImage.src = currentTrack.coverArt;
+    currentTrackImage.dataset.src = currentTrack.coverArt;
+    currentTrackImage.src = placeholderImage;
     currentTrackImage.loading = 'lazy';
     currentTrackImage.style.display = 'block';
+    observeLazyImage(currentTrackImage);
     playPauseBtn.innerHTML = isPlaying ? 
         '<i class="fas fa-pause"></i>' : 
         '<i class="fas fa-play"></i>';
 
     // Full-screen player updates
-    fullTrackImage.src = currentTrack.coverArt;
+    fullTrackImage.dataset.src = currentTrack.coverArt;
+    fullTrackImage.src = placeholderImage;
     fullTrackImage.loading = 'lazy';
     fullTrackImage.style.display = 'block';
+    observeLazyImage(fullTrackImage);
     fullTrackTitle.textContent = currentTrack.title;
     fullTrackArtist.textContent = currentTrack.artist;
     fullPlayerAlbum.textContent = currentTrack.album;
@@ -661,7 +714,7 @@ function renderTrackList(tracks) {
                 <i class="fas ${currentTrack && currentTrack.id === track.id && isPlaying ? 'fa-pause' : 'fa-play'} play-icon"></i>
             </div>
             <div class="track-info">
-                <img src="${track.coverArt}" alt="${track.title}" class="track-cover" loading="lazy">
+                <img src="${placeholderImage}" data-src="${track.coverArt}" alt="${track.title}" class="track-cover lazy-load" loading="lazy">
                 <div class="track-details">
                     <div class="track-title">${track.title}</div>
                     <div class="track-artist">${track.artist}</div>
@@ -680,6 +733,8 @@ function renderTrackList(tracks) {
         trackItem.addEventListener('click', () => playTrack(track, tracks));
         trackList.appendChild(trackItem);
     });
+
+    observeLazyImages(trackList);
 }
 
 
