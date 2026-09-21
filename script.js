@@ -84,6 +84,7 @@ let isPlaying = false;
 let currentCategory = 'all';
 let searchQuery = '';
 let audioPlayer = null;
+let allMusicTracks = [];
 const placeholderImage = 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==';
 let lazyObserver = null;
 
@@ -102,6 +103,7 @@ const playAllBtn = document.getElementById('playAllBtn');
 const searchResults = document.getElementById('searchResults');
 const searchTitle = document.getElementById('searchTitle');
 const noResults = document.getElementById('noResults');
+const sidebarPlaylists = document.getElementById('sidebarPlaylists');
 
 // Player elements (Mini Player)
 const musicPlayer = document.getElementById('musicPlayer');
@@ -146,9 +148,27 @@ document.addEventListener('DOMContentLoaded', function() {
     setupEventListeners();
 });
 
-function initializeApp() {
-    const initialTracks = getFilteredTracks();
-    console.log('Initial filtered tracks count:', initialTracks.length); // Debugging line
+async function initializeApp() {
+    let oldSongs = [];
+    try {
+        const response = await fetch('song.json');
+        const songs = await response.json();
+        oldSongs = songs.map((song, index) => ({
+            id: `old-song-${index}`,
+            title: song.title.split(' - ')[0].split('(')[0].replace(/::www\..*::/g, '').replace(/@.*\.com/g, '').trim(),
+            artist: 'Various Artists',
+            album: 'Shubham 1000 Old Songs',
+            duration: `${Math.floor(Math.random() * 3) + 3}:${String(Math.floor(Math.random() * 60)).padStart(2, '0')}`,
+            path: song.url,
+            category: 'Shubham 1000 Old Songs',
+            coverArt: 'https://placehold.co/100x100/1DB954/FFFFFF?text=Old+Songs'
+        }));
+    } catch (error) {
+        console.error('Error loading song.json:', error);
+    }
+
+    allMusicTracks = [...musicTracks, ...oldSongs];
+    addPlaylistToSidebar('Shubham 1000 Old Songs');
     updateDisplay();
     updatePlayerDisplay();
 }
@@ -290,6 +310,16 @@ function setupEventListeners() {
         audioPlayer.addEventListener('ended', playNext);
         audioPlayer.addEventListener('error', handleAudioError);
     }
+
+    sidebarPlaylists.addEventListener('click', function(event) {
+        const target = event.target.closest('.playlist-item');
+        if (target && target.dataset.playlistName) {
+            selectPlaylist(target.dataset.playlistName);
+            if (app.classList.contains('sidebar-open')) {
+                toggleSidebar();
+            }
+        }
+    });
 }
 
 function toggleSidebar() {
@@ -305,6 +335,16 @@ function selectCategory(category) {
         if (item.dataset.category === category) {
             item.classList.add('active');
         }
+    });
+
+    updateDisplay();
+}
+
+function selectPlaylist(playlistName) {
+    currentCategory = playlistName === 'Shubham 1000 Old Songs' ? playlistName : 'all';
+
+    document.querySelectorAll('.playlist-item').forEach(item => {
+        item.classList.toggle('active', item.dataset.playlistName === playlistName);
     });
 
     updateDisplay();
@@ -344,7 +384,7 @@ function updateDisplay() {
 }
 
 function getFilteredTracks() {
-    let tracks = musicTracks;
+    let tracks = allMusicTracks;
 
     // Filter by category
     if (currentCategory !== 'all') {
@@ -383,6 +423,12 @@ function getCategoryInfo() {
                 title: 'Other Music',
                 description: 'Diverse collection of music from various genres',
                 coverArt: 'https://images.pexels.com/photos/1540338/pexels-photo-1540338.jpeg?auto=compress&cs=tinysrgb&w=500'
+            };
+        case 'Shubham 1000 Old Songs':
+            return {
+                title: 'Shubham 1000 Old Songs',
+                description: 'A massive collection of old hits from various artists.',
+                coverArt: 'https://placehold.co/500x500/1DB954/FFFFFF?text=Shubham+Old+Songs'
             };
         default:
             return {
@@ -753,4 +799,15 @@ function openFullScreenPlayer() {
 function closeFullScreenPlayer(e) {
     e.stopPropagation(); // Stop propagation for the close button itself
     fullScreenPlayer.classList.remove('visible');
+}
+
+function addPlaylistToSidebar(playlistName) {
+    const playlistItem = document.createElement('div');
+    playlistItem.className = 'playlist-item';
+    playlistItem.dataset.playlistName = playlistName;
+    playlistItem.innerHTML = `
+        <i class="fas fa-music"></i>
+        <span>${playlistName}</span>
+    `;
+    sidebarPlaylists.appendChild(playlistItem);
 }
